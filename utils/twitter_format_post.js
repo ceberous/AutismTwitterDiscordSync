@@ -21,7 +21,11 @@ function custom_format( wPost ) {
 			wText = wText.trim();
 			wText = "**" + wText;
 			let c1 = wText.indexOf( "pic.twitter.com" );
-			if ( c1 !== -1 ) { wText = wText.insert( c1 , "** https://" ); }
+			if ( c1 !== -1 ) {
+				wText = wText.split( "pic.twitter.com" )[ 0 ];
+				wText = wText + "** " + TWITTER_STATUS_BASE + wPost.username + TWITTER_STATUS_BASE_P2 + wPost.id + "/photo/1";
+				//wText = wText.insert( c1 , "** https://" );
+			}
 			else if ( wText.indexOf( "/photo/" ) === -1 && wText.indexOf( "/video/" ) === -1 ) {
 				wText = wText + "** " + wPost.permalink;
 			}

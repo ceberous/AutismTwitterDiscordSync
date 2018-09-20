@@ -1,0 +1,17 @@
+{
+  "name": "autismtwitterdiscordsync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lilreporter": "^1.0.6",
+    "redis-manager-utils": "^1.0.6",
+    "resolver": "^0.1.12",
+    "simple-twitter-scraper-2": "0.0.1"
+  }
+}

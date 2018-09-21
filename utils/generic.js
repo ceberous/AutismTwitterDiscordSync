@@ -25,7 +25,7 @@ function RESOLVE_LINK( wURL ) {
 				wURL = wURL.split( "&gt;" )[ 0 ];
 				//discord_remove_preview = true;
 			}
-			resolver.resolve( wURL , function( err , url , filename , contentType ) {
+			resolver.resolve( encodeURI( wURL ) , function( err , url , filename , contentType ) {
 				if ( err ) { resolve( "fail" ); return; }
 				if ( url === wURL ) { resolve( "fail" ); return; }
 				//if ( discord_remove_preview ) { url = "<" + url + ">"; }

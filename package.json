@@ -12,6 +12,7 @@
     "lilreporter": "^1.0.6",
     "redis-manager-utils": "^1.0.6",
     "resolver": "^0.1.12",
+    "scrape-twitter": "^0.11.1",
     "simple-twitter-scraper-2": "0.0.1"
   }
 }
